@@ -1,0 +1,243 @@
+/* GENERAL PAGE STYLE */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(to bottom right, #f9f9f9, #e6eef7);
+  margin: 0;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* PAGE TITLE */
+.site-title {
+  font-size: 42px;
+  color: #003366; /* deep Finnish blue */
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-bottom: 3px solid #007bff;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.title-image {
+  width: 55%;           /* matches container width */
+  height: auto;          /* keeps aspect ratio */
+  display: block;
+  margin-bottom: 20px;   /* space between image and search bar */
+  border-radius: 12px;   /* optional for style */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* optional for subtle shadow */
+}
+
+/* CONTAINER */
+.catalogue-container {
+  width: 900px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+/* SEARCH BAR */
+.search-bar {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 25px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #aac4e0;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.search-bar:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* LETTER NAVIGATION */
+.letter-nav {
+  text-align: center;
+  margin-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.letter-nav span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background: #dfe8f3;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 17px;
+  color: #003366;
+  transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+
+.letter-nav span:hover,
+.letter-nav span.selected {
+  background: #007bff;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* STALLION LIST */
+.stallion-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* STALLION CARD */
+.stallion {
+  background-color: #fdfdfd;
+  border: 1px solid #cdd9eb;
+  border-radius: 10px;
+  padding: 25px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto 20px auto;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.stallion:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.stallion h2 {
+  text-align: center;
+  font-size: 26px;
+  color: #003366;
+  margin-bottom: 15px;
+}
+
+.stallion-subtitle {
+  text-align: center;   /* center the text */
+  font-size: 18px;      /* smaller than horse name */
+  color: #007bff;       /* blue to match theme */
+  margin: 5px 0 15px 0; /* spacing above/below */
+  font-weight: 500;     /* slightly lighter */
+  width: 100%;          /* make sure it takes full width */
+}
+
+/* DETAILS SECTION */
+.stallion-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.left-column,
+.right-column {
+  width: 48%;
+}
+
+.left-column p,
+.right-column p {
+  text-align: center;
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+/* CONTACT LINE */
+.contact {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.contact a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* PEDIGREE TABLE */
+.pedigree-table {
+  width: 90%;
+  margin: 20px auto 0 auto;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.pedigree-table th,
+.pedigree-table td {
+  border: 1px solid #aac4e0;
+  padding: 8px;
+  text-align: center;
+}
+
+.pedigree-table th {
+  background-color: #dfe8f3;
+  color: #003366;
+  font-weight: 700;
+}
+
+.pedigree-table td {
+  background-color: #f8fbff;
+  color: #333;
+}
+
+.title-image {
+  width: 55%;           /* full width of the container */
+  max-width: 100%;       /* ensures it never exceeds container */
+  height: auto;          /* keep aspect ratio */
+  display: block;
+  margin-bottom: 20px;   /* space between image and search bar */
+  border-radius: 12px;   /* optional style */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* optional shadow */
+  object-fit: cover;     /* ensures it fills width nicely */
+}
+
+.site-footer {
+  width: 100%;                /* full width */
+  text-align: center;
+  padding: 15px 0;
+  background-color: #f0f4fa;  /* light subtle background */
+  color: #555;                 /* subtle text color */
+  font-size: 14px;
+  border-top: 1px solid #dfe8f3;
+  margin-top: 40px;            /* space above the footer */
+  box-sizing: border-box;
+}
+
+/* MOBILE ADJUSTMENTS */
+@media (max-width: 600px) {
+  .title-image {
+    width: 55%;         /* scales image to mobile container */
+    margin-bottom: 15px; /* slightly smaller spacing on mobile */
+  }
+
+  .catalogue-container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+
+  .letter-nav span {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+  }
+}
