@@ -131,6 +131,16 @@ body {
   width: 100%;          /* make sure it takes full width */
 }
 
+.stallion-free-use {
+  text-align: center;   /* center the text */
+  font-size: 14px;      /* smaller than horse name and subtitle */
+  color: #ff0000;       /* red */
+  margin: 5px 0 15px 0; /* spacing above/below */
+  font-weight: 500;     /* slightly lighter */
+  width: 100%;          /* make sure it takes full width */
+}
+
+
 /* DETAILS SECTION */
 .stallion-details {
   display: flex;
