@@ -1,4 +1,4 @@
-# Stallion Catalogue
+# Stallion catalogue
 Stallion catalogue for Virtual World Championships 2025
 
 ## How to use the stallion catalogue ##
